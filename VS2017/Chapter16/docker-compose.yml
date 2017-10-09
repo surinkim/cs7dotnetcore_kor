@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  ch16_imageeditorsite:
+    image: ch16_imageeditorsite
+    build:
+      context: ./Ch16_ImageEditorSite
+      dockerfile: Dockerfile
