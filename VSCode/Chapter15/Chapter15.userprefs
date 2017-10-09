@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{487C4F29-C0C0-4F18-8131-DEFD586DC617}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ch15_MobileApp/Views/CustomerList.xaml.cs">
+    <Files>
+      <File FileName="Droid/PhoneDialer.cs" Line="45" Column="2" />
+      <File FileName="Ch15_MobileApp/Views/CustomerList.xaml.cs" Line="93" Column="2" />
+      <File FileName="Ch15_MobileApp/Views/CustomerDetails.xaml.cs" Line="1" Column="1" />
+      <File FileName="Ch15_MobileApp/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="Ch15_MobileApp/Views/CustomerList.xaml" Line="34" Column="15" />
+      <File FileName="Ch15_MobileApp/Views/CustomerDetails.xaml" Line="46" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Ch15__MobileApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.634E25D9-13CB-493A-A8A6-F52A8885B43E">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Ch15__MobileApp.iOS>
+</Properties>

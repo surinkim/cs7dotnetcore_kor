@@ -1,0 +1,144 @@
+System.NotSupportedException: Could not parse xml ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at MonoTouch.Design.IModelObjectContextExtensions.WithIdProvider (MonoTouch.Design.IModelObjectContext context, MonoTouch.Design.IIdProvider idProvider) [0x0000b] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/IModelObjectContextExtensions.cs:10 
+  at MonoTouch.Design.Parser.ParseElementsAndAttributes (MonoTouch.Design.ParseContext context, System.Object result) [0x0003d] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:273 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context, System.Object result, Xamarin.Designer.ProxiedException error) [0x000d0] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:365 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context) [0x00041] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:240 
+  at MonoTouch.Design.Parser.ParseElement (MonoTouch.Design.LayoutGuides layoutGuides, MonoTouch.Design.ParseContext context) [0x0000f] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:1014 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00043] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:313 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/referencesource/mscorlib/system/reflection/methodbase.cs:229 
+  at MonoTouch.Design.Parser.ParseElements (MonoTouch.Design.ParseContext context, System.Object result) [0x000da] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:319 
+  at MonoTouch.Design.Parser.ParseElementsAndAttributes (MonoTouch.Design.ParseContext context, System.Object result) [0x0002d] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:269 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context, System.Object result, Xamarin.Designer.ProxiedException error) [0x000d0] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:365 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context) [0x00041] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:240 
+  at MonoTouch.Design.Parser.ParseElement (MonoTouch.Design.ProxiedViewController model, MonoTouch.Design.ParseContext context) [0x000f3] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:746 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00043] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:313 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/referencesource/mscorlib/system/reflection/methodbase.cs:229 
+  at MonoTouch.Design.Parser.ParseElements (MonoTouch.Design.ParseContext context, System.Object result) [0x000da] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:319 
+  at MonoTouch.Design.Parser.ParseElementsAndAttributes (MonoTouch.Design.ParseContext context, System.Object result) [0x0002d] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:269 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context, System.Object result, Xamarin.Designer.ProxiedException error) [0x000d0] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:365 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context) [0x00041] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:240 
+  at MonoTouch.Design.Parser.ParseElement (MonoTouch.Design.Scene scene, MonoTouch.Design.ParseContext context) [0x0008b] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:684 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00043] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:313 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/referencesource/mscorlib/system/reflection/methodbase.cs:229 
+  at MonoTouch.Design.Parser.ParseElements (MonoTouch.Design.ParseContext context, System.Object result) [0x000da] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:319 
+  at MonoTouch.Design.Parser.ParseElementsAndAttributes (MonoTouch.Design.ParseContext context, System.Object result) [0x0002d] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:269 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context, System.Object result, Xamarin.Designer.ProxiedException error) [0x000d0] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:365 
+  at MonoTouch.Design.Parser.ParseCore (MonoTouch.Design.ParseContext context) [0x00041] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:240 
+  at MonoTouch.Design.Parser.ParseElement (MonoTouch.Design.Storyboard sb, MonoTouch.Design.ParseContext context) [0x00040] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:879 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /private/tmp/source-mono-d15-3/bockbuild-d15-3/profiles/mono-mac-xamarin/build-root/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 
+   --- End of inner exception stack trace ---
+  at MonoTouch.Design.Parser.Parse (MonoTouch.Design.ParseContext context) [0x00021] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:220 
+  at MonoTouch.Design.Parser.Parse (System.Xml.Linq.XElement xml, MonoTouch.Design.DeviceFamily targetRuntime, MonoTouch.Design.IModelObjectContext modelObjectContext) [0x00014] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Shared/Parser.cs:203 
+  at MonoTouch.Design.Client.IPhoneDesignerSession+<LoadXml>d__163.MoveNext () [0x00129] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:411 
+
+Contents of /Users/hyun/Library/Logs/VisualStudio/7.0/iOSDesigner.2017-10-07__18-40-57.log:
+MDAddinsHash: 3262aadf811a18c12eac6742532d052b0139a808
+
+[2017-10-07 18:41:27.9] INFO: ENTERING sandbox: AndroidDesignerMac
+
+[2017-10-07 18:41:28.0] INFO: LEAVING sandbox: AndroidDesignerMac
+
+[2017-10-07 18:41:38.0] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:41:38.0] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:41:38.0] INFO: iOSXamlRenderer took 3268.59ms to finish processing 4 scene(s).
+[2017-10-07 18:41:38.1] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:41:38.1] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:41:38.1] INFO: iOSXamlRenderer took 3161.424ms to finish processing 4 scene(s).
+[2017-10-07 18:41:38.4] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:41:38.4] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:41:38.4] INFO: iOSXamlRenderer took 197.017ms to finish processing 4 scene(s).
+[2017-10-07 18:41:38.5] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:41:38.5] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:41:38.5] INFO: iOSXamlRenderer took 129.442ms to finish processing 4 scene(s).
+[2017-10-07 18:41:45.3] INFO: AndroidXamlRenderer took 10310.874ms to finish processing 1 scene(s).
+[2017-10-07 18:41:45.3] INFO: AndroidXamlRenderer took 11099.341ms to finish processing 1 scene(s).
+[2017-10-07 18:41:45.4] INFO: AndroidXamlRenderer took 3.102ms to finish processing 1 scene(s).
+[2017-10-07 18:41:45.4] INFO: AndroidXamlRenderer took 2.975ms to finish processing 1 scene(s).
+[2017-10-07 18:41:45.4] INFO: AndroidXamlRenderer took 3.139ms to finish processing 3 scene(s).
+[2017-10-07 18:41:45.4] INFO: AndroidXamlRenderer took 4.909ms to finish processing 3 scene(s).
+[2017-10-07 18:43:32.5] INFO: AndroidXamlRenderer took 4.778ms to finish processing 1 scene(s).
+[2017-10-07 18:43:32.5] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:32.5] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:32.5] INFO: iOSXamlRenderer took 89.955ms to finish processing 4 scene(s).
+[2017-10-07 18:43:32.5] INFO: AndroidXamlRenderer took 4.805ms to finish processing 3 scene(s).
+[2017-10-07 18:43:32.6] INFO: AndroidXamlRenderer took 2.596ms to finish processing 1 scene(s).
+[2017-10-07 18:43:32.6] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:32.6] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:32.6] INFO: iOSXamlRenderer took 95.007ms to finish processing 4 scene(s).
+[2017-10-07 18:43:32.6] INFO: AndroidXamlRenderer took 2.788ms to finish processing 3 scene(s).
+[2017-10-07 18:43:41.2] INFO: AndroidXamlRenderer took 4.26ms to finish processing 1 scene(s).
+[2017-10-07 18:43:41.3] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:41.3] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:41.3] INFO: iOSXamlRenderer took 81.885ms to finish processing 4 scene(s).
+[2017-10-07 18:43:41.3] INFO: AndroidXamlRenderer took 2.698ms to finish processing 3 scene(s).
+[2017-10-07 18:43:41.3] INFO: AndroidXamlRenderer took 2.309ms to finish processing 1 scene(s).
+[2017-10-07 18:43:41.4] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:41.4] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:41.4] INFO: iOSXamlRenderer took 79.641ms to finish processing 4 scene(s).
+[2017-10-07 18:43:41.4] INFO: AndroidXamlRenderer took 2.809ms to finish processing 3 scene(s).
+[2017-10-07 18:43:46.7] INFO: AndroidXamlRenderer took 8.561ms to finish processing 1 scene(s).
+[2017-10-07 18:43:46.8] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:46.8] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:46.8] INFO: iOSXamlRenderer took 86.069ms to finish processing 4 scene(s).
+[2017-10-07 18:43:46.8] INFO: AndroidXamlRenderer took 3.797ms to finish processing 3 scene(s).
+[2017-10-07 18:43:46.8] INFO: AndroidXamlRenderer took 6.161ms to finish processing 1 scene(s).
+[2017-10-07 18:43:46.9] ERROR: The IPhoneDesignerService is null
+[2017-10-07 18:43:46.9] ERROR: Couldn't render iOS XAML
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MonoTouch.Design.Client.IPhoneDesignerSession.GetCurrentXcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:847 
+  at MonoTouch.Design.Client.IPhoneDesignerSession.get_XcodeVersion () [0x00000] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.iOS/MonoTouch.Design.Client/IPhoneDesignerSession.cs:160 
+  at Xamarin.Designer.Forms.Preview.iOSXamlRenderer+<RenderXamls>d__2.MoveNext () [0x000e2] in /Users/builder/data/lanes/5123/7afedcae/source/md-addins/Xamarin.Designer.Forms/Xamarin.Designer.Forms.Preview/iOS/iOSXamlRenderer.cs:43 
+[2017-10-07 18:43:46.9] INFO: iOSXamlRenderer took 84.976ms to finish processing 4 scene(s).
+[2017-10-07 18:43:46.9] INFO: AndroidXamlRenderer took 2.599ms to finish processing 3 scene(s).
+[2017-10-07 19:02:20.0] INFO: IDE notified that the list of assemblies referenced has changed
+[2017-10-07 19:02:20.0] INFO: Not uploading assemblies because there is no remote session
+[2017-10-07 19:02:20.0] INFO: IDE notified that the list of assemblies referenced has changed
+[2017-10-07 19:02:20.0] INFO: Not uploading assemblies because there is no remote session
