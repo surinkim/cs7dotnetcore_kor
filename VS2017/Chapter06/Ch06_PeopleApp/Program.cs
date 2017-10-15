@@ -1,6 +1,5 @@
 ﻿using Packt.CS7;
 using System;
-//using System.Text;
 using static System.Console;
 
 namespace Ch06_PeopleApp
@@ -9,15 +8,12 @@ namespace Ch06_PeopleApp
     {
 
 
-    static void Main(string[] args)
+        static void Main(string[] args)
         {
-            //Console.OutputEncoding = Encoding.UTF8;
-
-
             var p1 = new Person();
             p1.Name = "Bob Smith";
             p1.DateOfBirth = new DateTime(1965, 12, 22);
-            WriteLine($"{p1.Name} was born on {p1.DateOfBirth:dddd, d MMMM  yyyy}");
+            WriteLine($"{p1.Name} was born on {p1.DateOfBirth:dddd, d MMMM yyyy}");
 
             var p2 = new Person
             {
@@ -42,11 +38,11 @@ namespace Ch06_PeopleApp
             var ba1 = new BankAccount();
             ba1.AccountName = "Mrs. Jones";
             ba1.Balance = 1000;
-            WriteLine($"{ba1.AccountName} earned {ba1.Balance * BankAccount.InterestRate:C} interest."); 
+            WriteLine($"{ba1.AccountName} earned {ba1.Balance * BankAccount.InterestRate:C} interest.");
 
             var ba2 = new BankAccount();
-            ba2.AccountName = "Ms. Gerrier"; 
-            ba2.Balance = 900; 
+            ba2.AccountName = "Ms. Gerrier";
+            ba2.Balance = 900;
             WriteLine($"{ba2.AccountName} earned {ba2.Balance * BankAccount.InterestRate:C} interest.");
 
             WriteLine($"{p1.Name} is a {Person.Species}");
@@ -81,6 +77,26 @@ namespace Ch06_PeopleApp
             WriteLine(p1.SayHello());
             WriteLine(p1.SayHelloTo("Emily"));
 
+            p1.OptionalParameters();
+            p1.OptionalParameters("Jump!", 98.5);
+            p1.OptionalParameters(number: 52.7, command: "Hide!");
+            p1.OptionalParameters("Poke!", active: false);
+
+            int a = 10;
+            int b = 20;
+            int c = 30;
+            WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+            p1.PassingParameters(a, ref b, out c);
+            WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
+            // out 매개변수에 대해 단순화 된 C# 7 구문 
+            int d = 10;
+            int e = 20;
+            WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet!");
+            p1.PassingParameters(d, ref e, out int f);
+            WriteLine($"After: d = {d}, e = {e}, f = {f}");
+
+
             var max = new Person
             {
                 Name = "Max",
@@ -90,6 +106,18 @@ namespace Ch06_PeopleApp
             WriteLine(max.Greeting);
             WriteLine(max.Age);
 
+            max.FavoriteIceCream = "Chocolate Fudge";
+            WriteLine($"Max's favorite ice-cream flavor is {max.FavoriteIceCream}.");
+            max.FavoritePrimaryColor = "Red";
+            WriteLine($"Max's favorite primary color is {max.FavoritePrimaryColor}.");
+
+
+            max.Children.Add(new Person { Name = "Charlie" });
+            max.Children.Add(new Person { Name = "Ella" });
+            WriteLine($"Max's first child is {max.Children[0].Name}");
+            WriteLine($"Max's second child is {max.Children[1].Name}");
+            WriteLine($"Max's first child is {max[0].Name}");
+            WriteLine($"Max's second child is {max[1].Name}");
 
         }
     }

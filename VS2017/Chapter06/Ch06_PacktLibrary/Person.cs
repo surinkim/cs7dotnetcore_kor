@@ -72,7 +72,22 @@ namespace Packt.CS7
             return $"{Name} says 'Hello {name}!'";
         }
 
+        public void OptionalParameters(string command = "Run!", double number = 0.0, bool active = true)
+        {
+            WriteLine($"command is {command}, number is {number}, active is { active}");
+        }
 
+        public void PassingParameters(int x, ref int y, out int z)
+        {
+            // out 매개 변수는 기본 값을 가질 수 없으며
+            // 반드시 메서드 안에서 초기화 되어야 한다.
+            z = 99;
+
+            // 각 매개 변수 값을 증가시킨다.
+            x++;
+            y++;
+            z++;
+        }
     }
 
 }
