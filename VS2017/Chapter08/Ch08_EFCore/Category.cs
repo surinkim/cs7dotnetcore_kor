@@ -11,7 +11,7 @@ namespace Packt.CS7
         [Column(TypeName = "ntext")]
         public string Description { get; set; }
 
-        // defines a navigation property for related rows 
+        // 연관된 행(row)을 관리하기 위해 탐색 속성을 정의한다.
         public virtual ICollection<Product> Products { get; set; }
 
         public Category()
