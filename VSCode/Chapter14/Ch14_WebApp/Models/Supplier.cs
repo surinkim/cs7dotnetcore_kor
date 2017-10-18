@@ -9,7 +9,7 @@ namespace Packt.CS7
         public int SupplierID { get; set; }
         [Required]
         [StringLength(15)]
-        [Display(Name = "Supplier's Company Name")]
+        [Display(Name = "회사 이름")]
         public string CompanyName { get; set; }
     }
 }

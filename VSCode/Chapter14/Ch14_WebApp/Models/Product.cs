@@ -7,7 +7,7 @@ namespace Packt.CS7
         public int ProductID { get; set; }
         [Required]
         [StringLength(40)]
-        [Display(Name = "Product Name")]
+        [Display(Name = "제품 이름")]
         public string ProductName { get; set; }
         public int? SupplierID { get; set; }
         public Supplier Supplier { get; set; }
