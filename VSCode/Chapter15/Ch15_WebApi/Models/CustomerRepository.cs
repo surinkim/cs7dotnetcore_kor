@@ -6,29 +6,25 @@ namespace Packt.CS7.Models
 {
   public class CustomerRepository : ICustomerRepository
   {
-    // cache the customers in a thread-safe dictionary
-    // so restarting the service will reset the customers
-    // in real world the repository would perform CRUD
-    // on the database
+    //스레드에 안전한 딕셔너리에 customer 정보를 캐시한다.
+    //서비스를 재시작하면 customer 정보를 리셋한다.
     private static 
       ConcurrentDictionary<string, Customer> customers;
 
     public CustomerRepository(Northwind db)
     {
-      // load custoemrs from database as a normal
-      // Dictionary with CustomerID is the key, 
-      // then convert to a thread-safe
-      // ConcurrentDictionary
+      // 데이터베이스에서 customer 정보를 읽고 CustomerID를 키로 
+      // 딕셔너리에 넣은 다음, 스레드에 안전한 ConcurrentDictionary에
+      // 추가한다.
       customers = new ConcurrentDictionary<string, Customer>(
         db.Customers.ToDictionary(c => c.CustomerID));
     }
 
     public Customer Add(Customer c)
     {
-         // normalize CustomerID into uppercase
+      // CustomerID를 대문자로 변환한다. 
       c.CustomerID = c.CustomerID.ToUpper();
-      // if the customer is new, add it, else
-      // call Update method
+      // 새로운 customer 정보면 추가하고, 그렇지 않으면 갱신한다.
       return customers.AddOrUpdate(c.CustomerID, c, Update);
     }
 
