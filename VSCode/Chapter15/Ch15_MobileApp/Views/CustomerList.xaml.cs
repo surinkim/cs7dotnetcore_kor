@@ -50,7 +50,7 @@ namespace Ch15_MobileApp
 		{
 			Customer c = e.Item as Customer;
 			if (c == null) return;
-			// navigate to the detail view and show the tapped customer
+			// 선택한 customer의 상세 뷰를 탐색해서 보여준다.
 			await Navigation.PushAsync(new CustomerDetail(c));
 		}
 
@@ -59,7 +59,7 @@ namespace Ch15_MobileApp
 		{
 			ListView listView = sender as ListView;
 			listView.IsRefreshing = true;
-			// simulate a refresh
+			// 실제 리프레쉬 처럼 보이도록 약간의 시간을 소비한다.
 			await Task.Delay(1500);
 			listView.IsRefreshing = false;
 		}
