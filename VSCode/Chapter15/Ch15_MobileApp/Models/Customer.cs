@@ -95,7 +95,7 @@ namespace Ch15_MobileApp.Models
 			}
 		}
 
-		// for testing before calling web service
+		// 웹 서비스를 호출하기 전에 테스트 목적으로 사용한다.
 		public static void SampleData()
 		{
 			Customers.Clear();
