@@ -5,13 +5,13 @@ using Packt.CS7.Models;
 
 namespace Packt.CS7.Controllers
 {
-  // base address: api/customers
+  // 기본 경로: api/customers
   [Route("api/[controller]")]
   public class CustomersController : Controller
   {
     private ICustomerRepository repo;
 
-    // constructor injects registered repository
+    // 등록된 저장소를 생성자에 주입
     public CustomersController(ICustomerRepository repo)
     {
       this.repo = repo;
