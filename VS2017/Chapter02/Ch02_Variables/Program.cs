@@ -19,7 +19,7 @@ namespace Ch02_Variables
 
             var population = 66_000_000; // 영국 인구는 6600만이다. 
             var weight = 1.88; // 킬로그램 
-            var price = 4.99M; // 파운드
+            var price = 5.0M; // 원
             var fruit = "Apples"; // string은 큰 따옴표를 사용
             var letter = 'Z'; // char는 작은 따옴표를 사용
             var happy = true; // bool은 true나 false 값을 가짐.
