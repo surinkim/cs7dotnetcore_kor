@@ -6,12 +6,12 @@ namespace Packt.CS7
 {
     public partial class Person
     {
-        // C# 1 – 5의 구문을 사용하여 속성을 정의한다.
+        // 모든 C# 버전에서 사용 가능한 속성 구문
         public string Origin
         {
             get
             {
-                //C# 6부터 지원하는 문자열 보간 구문
+                //문자열 보간은 C# 6부터 지원
                 return $"{Name} was born on {HomePlanet}";
             }
         }
@@ -20,6 +20,7 @@ namespace Packt.CS7
         //C# 6 이후의 람다 표현식을 사용한 두 번째 속성 정의.
         public string Greeting => $"{Name} says 'Hello!'";
 
+        //C# 6 이후의 람다 표현식을 사용한 세 번째 속성 정의.
         public int Age => (int)(System.DateTime.Today
           .Subtract(DateOfBirth).TotalDays / 365.25);
 
