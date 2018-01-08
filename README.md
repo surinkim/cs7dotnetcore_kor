@@ -6,7 +6,7 @@
 *  vs2017, vscode로 구분된 각 챕터별 예제 코드가 들어 있습니다.
 *  책과 관련된 문의는 corecode.pe.kr 도서 페이지에 남겨 주세요.
 * 구매하러 가기
-	* <a href="http://www.yes24.com/24/goods/57905587" target="_blank">예스24</a>
-	* <a href="http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=128563714" target="_blank">알라딘</a>
+	* [예스24](http://www.yes24.com/24/goods/57905587)
+	* [알라딘](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=128563714)
 
 
